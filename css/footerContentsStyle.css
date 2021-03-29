@@ -1,0 +1,68 @@
+@font-face {
+  font-family: title;
+  src: url(../fonts/ProzaLibre-Regular.ttf);
+}
+@font-face {
+  font-family: body;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+:root {
+  /* Colors */
+  --font-white: #f5f5f5;
+  --font-black: #000000;
+  --background-color: #d4d8ff;
+
+  /* Font Size */
+  --font-extreme: 2.5em;
+  --font-large: 1.125rem;
+  --font-medium: 0.875rem;
+  --font-small: 0.75rem;
+  --font-micro: 0.625rem;
+
+  /* Size */
+  --all-side-margin: 10vw;
+  --aboutUs-box-height: 20vh;
+  --aboutUs-box-width: 40vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Copyright, Tos, Privacy Policy*/
+h1,
+h2 {
+  font-family: var(--title-font);
+}
+
+p {
+  font-family: body;
+  margin: 1rem 3rem;
+}
+
+ul {
+  margin: 2rem;
+  margin-left: 4rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  font-family: body;
+  font-size: 1rem;
+}
+
+main {
+  margin: 0 20vw;
+}
+
+main h1 {
+  margin: 1rem 0;
+  margin-left: 1rem;
+}
+
+main h2 {
+  margin-left: 2rem;
+}
