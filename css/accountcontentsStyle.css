@@ -281,8 +281,13 @@ label span, #mainRegister span {
     display: none;
 }
 
+.contOwner {
+    display: none;
+}
 
-
+#mainRegister .contBtn input:first-child:checked .contOwner {
+    display: block;
+}
 
 
 
