@@ -30,9 +30,9 @@
 }
 
 /* Sign In */
-#mainSignIn{
+#mainSignIn, #mainRegister{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,22 +42,22 @@
     list-style: none;
 }
 
-#mainSignIn .container {
-    width: 60vw;
+.container {
+    width: 70%;
     height: 70vh;
     max-width:600px;
     background-color:#fff;     
     position: relative;                                                                                       
 }
 
-#mainSignIn form {
-    width: 60%;
+form {
+    width: 100%;
     height: 50%;
     margin: 10%;
     position: relative;
 }
 
-#mainSignIn h2 {
+h2 {
     width:60%;
     margin:10%;
     text-align: center;
@@ -65,7 +65,16 @@
     font-size:var(--h2-font-size);
 }
 
-#mainSignIn label{
+input {
+    width: 60%;
+    margin: 3% 0;
+    border-bottom: 1px solid grey;
+    font-size:var(--input-font-size);
+    text-align: left;
+    display: block;
+}
+
+label{
     width: 100%;
     margin: 10% auto;
     text-align:left;
@@ -73,22 +82,31 @@
 
 }
 
-#mainSignIn label span {
+label span, #mainRegister span {
     font-size:var(--span-font-size);
     font-weight:600;
     color:var(--signIn-span);
 }
 
-#mainSignIn input {
-    width: 100%;
-    padding-bottom: 5px;
-    margin-top: 5px;
-    border-bottom: 1px solid grey;
-    font-size:var(--input-font-size);
-    text-align: center;
-    display: block;
+.slideContainer{
+    width: 20%;
+    height: 70vh;
+    background-color: orange;
+    overflow: hidden;
 }
 
+.slideContainer button[type="button"]{
+    width:100px;
+    height: 50px;
+    padding:2%;
+    font-weight: 600;
+    font-family: title;
+    background: transparent;
+    border: 3px solid black;
+    z-index: 2;
+}
+
+/*Sign In*/
 #mainSignIn button {
     width: 100%;
     height: 36px;
@@ -103,7 +121,7 @@
     display:block;
     cursor:pointer;
 }
-#mainSignIn button[type="submit"] {
+#mainSignIn input[type="submit"] {
     margin-top:40px;
     margin-bottom:30px;
     font-weight: 600;
@@ -112,7 +130,7 @@
 }
 
 
-#mainSignIn button[type="submit"]:hover {
+#mainSignIn input[type="submit"]:hover {
     background: -webkit-linear-gradient(right,orange, blue );;
 }
 
@@ -129,13 +147,6 @@
     color:red;
 }
 
-/*Sign Up*/
-
-#mainSignIn .slideContainer{
-    width: 30%;
-    height: 70vh;
-    overflow: hidden;
-}
 
 #mainSignIn ul {
     width:100%;
@@ -255,15 +266,26 @@
     }
 }
 
-#mainSignIn .slideContainer button[type="button"]{
-    width:100px;
-    height: 50px;
-    padding:2%;
-    font-weight: 600;
-    font-family: title;
-    background: transparent;
-    border: 3px solid black;
-    z-index: 2;
+
+/*Register*/
+
+#mainRegister .container{
+    overflow: scroll;
 }
+
+#mainRegister input:invalid {
+    border: 1px solid red;
+}
+
+#mainRegister input:valid span{
+    display: none;
+}
+
+
+
+
+
+
+
 
 
