@@ -1,102 +1,106 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="Contact" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/contactStyle.css">
+    <meta name="Contact" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/contactStyle.css">
 </head>
+
 <body>
     <div class="container-contact100">
-	<div class="wrap-contact100">
-    <div class="leftDiv flex-col-c-m" style="background-image: url('img/placeholder.jpg' );background-size:contain; ">
-    
-    </div>
+        <div class="wrap-contact100">
+            <div class="leftDiv flex-col-c-m"
+                style="background-image: url('img/placeholder.jpg' );background-size:contain; ">
 
-
-    <div class="rightDiv">
-        <h1>Contact Us!</h1>
-        <form action="/action_page.php">
-
-             <!-- Contact purpose -->
-            <label for="type" class = "guide">Contact purpose</label>
-            <br>
-            <select id="type" name="type">
-            <option value="1">Lease</option>
-            <option value="2">Feedback</option>
-            <option value="3">Employment</option>
-            </select>
-            <br>
-            <br>
-
-             <!-- Name -->
-            <label for="fname" class = "guide">Your Name</label>
-            <label for="lname" class = "guide" hidden></label>
-            <br>
-            <div style="display: inline;">
-            <input type="text" id="fname" name="firstname" placeholder="Your first name" required>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
-        </div>
-            <br>
-            <br>
-
-             <!-- Phone -->            
-            <label for="phone" class = "guide">Phone</label>
-            <br>
-            <input type="tel" id="phone" name="phone" placeholder="+840 0000 0000" required>
-            <br>
-            <br>
-            
-             <!-- Mail -->
-            <label for="mail" class = "guide">Email</label>
-            <br>
-            <input type="email" id="mail" name="email" placeholder="example@email.com" required>
-            <br>
-            <br>
-
-             <!-- Pre -->
-            <label for="pre" class = "guide">Preferred contact method</label>
-            <br>
-            <div class = radio>
-            <input type="radio" id="prePhone" name="pre" value="prePhone" class = radioInput>
-            <label for="prePhone" class = radioLabel>Phone</label>
-            <input type="radio" id="preEmail" name="pre" value="premail"  class = radioInput>
-            <label for="preEmail"class = radioLabel>Email</label>
             </div>
-            <br>
-            <br>
 
-             <!-- Contact day -->
-            <label for="contactDay" class = "guide">Contact days</label><br>
-            <div class = checkbox>
-            <input type="checkbox" id="day1" name="contactDay" value="Mon" class = checkboxInput>
-            <label for="day1" class = checkboxLabel> Monday</label><br>
-            <input type="checkbox" id="day2" name="contactDay" value="Tue" class = checkboxInput>
-            <label for="day2" class = checkboxLabel>  Tuesday</label><br>
-            <input type="checkbox" id="day3" name="contactDay" value="Wed" class = checkboxInput>
-            <label for="day3" class = checkboxLabel> Wednesday</label><br>
-            <input type="checkbox" id="day4" name="contactDay" value="Thu" class = checkboxInput>
-            <label for="day4" class = checkboxLabel> Thursday</label><br>
-            <input type="checkbox" id="day5" name="contactDay" value="Fri" class = checkboxInput>
-            <label for="day5" class = checkboxLabel> Friday</label><br>
-            <input type="checkbox" id="day6" name="contactDay" value="Sat" class = checkboxInput>
-            <label for="day6" class = checkboxLabel> Saturday</label><br>
-            <input type="checkbox" id="day7" name="contactDay" value="Sun" class = checkboxInput>
-            <label for="day7" class = checkboxLabel> Sunday</label><br>
-            </div >
-            <br>
-            <br>
 
-             <!-- Message -->
-            <label for="mess" class = "guide"> Message </label>
-            <br>
-            <textarea id="mess" name="Message" placeholder="Write something.." style="height:200px"></textarea>
-            <br>
-            <br>
+            <div class="rightDiv">
+                <h1>Contact Us!</h1>
+                <form action="/action_page.php">
 
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </form>
-    </div>
-    </div>
+                    <!-- Contact purpose -->
+                    <label for="type" class="guide">Contact purpose</label>
+                    <br>
+                    <select id="type" name="type">
+                        <option value="1">Lease</option>
+                        <option value="2">Feedback</option>
+                        <option value="3">Employment</option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <!-- Name -->
+                    <label for="fname" class="guide">Your Name</label>
+                    <label for="lname" class="guide" hidden></label>
+                    <br>
+                    <div style="display: inline;">
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name" required>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+                    </div>
+                    <br>
+                    <br>
+
+                    <!-- Phone -->
+                    <label for="phone" class="guide">Phone</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone" placeholder="+840 0000 0000" required>
+                    <br>
+                    <br>
+
+                    <!-- Mail -->
+                    <label for="mail" class="guide">Email</label>
+                    <br>
+                    <input type="email" id="mail" name="email" placeholder="example@email.com" required>
+                    <br>
+                    <br>
+
+                    <!-- Pre -->
+                    <label for="pre" class="guide">Preferred contact method</label>
+                    <br>
+                    <div class=radio>
+                        <input type="radio" id="prePhone" name="pre" value="prePhone" class=radioInput>
+                        <label for="prePhone" class=radioLabel>Phone</label>
+                        <input type="radio" id="preEmail" name="pre" value="premail" class=radioInput>
+                        <label for="preEmail" class=radioLabel>Email</label>
+                    </div>
+                    <br>
+                    <br>
+
+                    <!-- Contact day -->
+                    <label for="contactDay" class="guide">Contact days</label><br>
+                    <div class=checkbox>
+                        <input type="checkbox" id="day1" name="contactDay" value="Mon" class=checkboxInput>
+                        <label for="day1" class=checkboxLabel> Monday</label><br>
+                        <input type="checkbox" id="day2" name="contactDay" value="Tue" class=checkboxInput>
+                        <label for="day2" class=checkboxLabel> Tuesday</label><br>
+                        <input type="checkbox" id="day3" name="contactDay" value="Wed" class=checkboxInput>
+                        <label for="day3" class=checkboxLabel> Wednesday</label><br>
+                        <input type="checkbox" id="day4" name="contactDay" value="Thu" class=checkboxInput>
+                        <label for="day4" class=checkboxLabel> Thursday</label><br>
+                        <input type="checkbox" id="day5" name="contactDay" value="Fri" class=checkboxInput>
+                        <label for="day5" class=checkboxLabel> Friday</label><br>
+                        <input type="checkbox" id="day6" name="contactDay" value="Sat" class=checkboxInput>
+                        <label for="day6" class=checkboxLabel> Saturday</label><br>
+                        <input type="checkbox" id="day7" name="contactDay" value="Sun" class=checkboxInput>
+                        <label for="day7" class=checkboxLabel> Sunday</label><br>
+                    </div>
+                    <br>
+                    <br>
+
+                    <!-- Message -->
+                    <label for="mess" class="guide"> Message </label>
+                    <br>
+                    <textarea id="mess" name="Message" placeholder="Write something.." style="height:200px"></textarea>
+                    <br>
+                    <br>
+
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
