@@ -1,0 +1,18 @@
+h1 {
+  font-size: 50%;
+  color: red;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  width: 20%;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}

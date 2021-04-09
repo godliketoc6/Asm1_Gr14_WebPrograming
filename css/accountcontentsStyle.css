@@ -1,0 +1,27 @@
+@font-face {
+    font-family: title;
+    src: url(../fonts/ProzaLibre-Regular.ttf);
+    }
+@font-face {
+    font-family: body;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+<<<<<<< Updated upstream
+    
+=======
+
+>>>>>>> Stashed changes
+:root {
+    /* Colors */
+
+    /* Font Size */
+
+    /* Size */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
