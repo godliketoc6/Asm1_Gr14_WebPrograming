@@ -14,7 +14,7 @@
     --h2-font-size:1.875rem;
     --span-font-size:0.875rem;
     --input-font-size: 1rem;
-    --btn-font-size:0.938rem;
+    --btn-font-size:1rem;
 
     /* Size */
 
@@ -27,13 +27,9 @@
     border: none;
     outline: none;
     background: none;
-    list-style: none;
+
 }
 
-<<<<<<< Updated upstream
-/* Sign In */
-=======
->>>>>>> Stashed changes
 #mainSignIn, #mainRegister, #mainPW{
     width: 100vw;
     height: 80vh;
@@ -42,44 +38,23 @@
     align-items: center;
 }
 
-<<<<<<< Updated upstream
-#mainSignIn ul, li {
-    list-style: none;
-}
-
-.container {
-    width: 500px;
-    padding: 2% 0;
-    margin: auto;
-    background-color:#fff;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-=======
->>>>>>> Stashed changes
 
 form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
 }
 
 h2 {
-    width:60%;
+    width:100%;
     text-align: center;
     font-family: title, Times, serif;
     font-size:var(--h2-font-size);
 }
 
 input {
-    width: 60%;
+    width: 100%;
     margin: 3% 0;
     border-bottom: 1px solid grey;
     font-size:var(--input-font-size);
@@ -94,7 +69,7 @@ label{
     display:block;
 }
 
-label span, #mainRegister span {
+label p, #mainRegister p {
     font-size:var(--span-font-size);
     font-weight:600;
     color:var(--signIn-span);
@@ -102,7 +77,7 @@ label span, #mainRegister span {
 
 
 input[type="submit"] {
-    height: 40px;
+    height: 35px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -122,58 +97,19 @@ input[type="submit"]:hover {
     background: -webkit-linear-gradient(right,orange, blue );;
 }
 
-
-
-#mainSignIn .container p {
-    width:60%;
-    margin:10%;
-    text-align: center;
-    font-size: var(--btn-font-size);
-    color:black;
-    cursor:pointer;
+input[type="submit"]:active {
+    transform: skewX(0.5);
+    -webkit-transform: skewX(0.5);
+    -moz-transform: skewX(0.5);
+    -ms-transform: skewX(0.5);
+    -o-transform: skewX(0.5);
 }
 
-#mainSignIn #forgotPsw:hover {
-    color:red;
-}
-
-
-/*Register*/
-
-#mainRegister .container{
-    overflow: scroll;
-}
-
-#mainRegister input:invalid {
-    border: 1px solid red;
-}
-
-#mainRegister input:valid span{
-    display: none;
-}
-
-.contOwner {
-    display: none;
-}
-
-#mainRegister .contBtn input:first-child:checked .contOwner {
-    display: block;
-}
-
-
-/* Forgot Password*/
-
-#mainPW h2, #mainPW p {
-    margin-bottom: 3%;
-}
-
-<<<<<<< Updated upstream
-=======
-.pwCount {
-    width: 500px;
-    padding: 2% 0;
-    margin: auto;
-    background-color:#fff;
+#mainPW .pwCont {
+    width: 410px;
+    height: 267px;
+    padding: 30px;
+    background-color:snow;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -183,4 +119,19 @@ input[type="submit"]:hover {
     flex-direction: column;
     align-items: center;
 }
->>>>>>> Stashed changes
+
+
+#mainPW h2 {
+    margin-bottom: 3%;
+    font-size: 2rem;
+}
+
+#mainPW p {
+    margin-bottom: 5%;
+    color: grey;
+}
+
+
+
+
+
