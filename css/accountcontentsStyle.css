@@ -30,7 +30,7 @@
 }
 
 /* Sign In */
-#mainSignIn, #mainRegister{
+#mainSignIn, #mainRegister, #mainPW{
     width: 100vw;
     height: 80vh;
     display: flex;
@@ -43,23 +43,29 @@
 }
 
 .container {
-    width: 70%;
-    height: 70vh;
-    max-width:600px;
-    background-color:#fff;     
-    position: relative;                                                                                       
+    width: 500px;
+    padding: 2% 0;
+    margin: auto;
+    background-color:#fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 form {
     width: 100%;
-    height: 50%;
-    margin: 10%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
     width:60%;
-    margin:10%;
     text-align: center;
     font-family: title, Times, serif;
     font-size:var(--h2-font-size);
@@ -79,7 +85,6 @@ label{
     margin: 10% auto;
     text-align:left;
     display:block;
-
 }
 
 label span, #mainRegister span {
@@ -88,49 +93,25 @@ label span, #mainRegister span {
     color:var(--signIn-span);
 }
 
-.slideContainer{
-    width: 20%;
-    height: 70vh;
-    background-color: orange;
-    overflow: hidden;
-}
 
-.slideContainer button[type="button"]{
-    width:100px;
-    height: 50px;
-    padding:2%;
-    font-weight: 600;
-    font-family: title;
-    background: transparent;
-    border: 3px solid black;
-    z-index: 2;
-}
-
-/*Sign In*/
-#mainSignIn button {
-    width: 100%;
-    height: 36px;
-    margin: 0 auto;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+input[type="submit"] {
+    height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
     color:whitesmoke;
+    text-align: center;
     font-size:var(--btn-font-size);
-    display:block;
-    cursor:pointer;
-}
-#mainSignIn input[type="submit"] {
-    margin-top:40px;
-    margin-bottom:30px;
     font-weight: 600;
     font-family: title;
+    cursor:pointer;
     background: -webkit-linear-gradient(left,orange, blue );
 }
 
 
-#mainSignIn input[type="submit"]:hover {
+input[type="submit"]:hover {
     background: -webkit-linear-gradient(right,orange, blue );;
 }
 
@@ -145,125 +126,6 @@ label span, #mainRegister span {
 
 #mainSignIn #forgotPsw:hover {
     color:red;
-}
-
-
-#mainSignIn ul {
-    width:100%;
-    height: 100%;
-    position: relative;
-}
-
-#mainSignIn .slideContainer li {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    opacity:0;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#mainSignIn li:nth-child(1){
-    background: red;
-    animation:fadeSlide1 8s infinite;
-    -webkit-animation:fadeSlide1 8s infinite;
-    -o-animation: fadeSlide1 8s infinite;
-    -moz-animation: fadeSlide1 8s infinite;
-}
-#mainSignIn li:nth-child(2){
-    background: orange;
-    animation:fadeSlide2 8s infinite;
-    -webkit-animation:fadeSlide2 8s infinite;
-    -o-animation: fadeSlide2 8s infinite;
-    -moz-animation: fadeSlide2 8s infinite;
-}
-#mainSignIn li:nth-child(3){
-    background: yellow;
-    animation:fadeSlide3 8s infinite;
-    -webkit-animation:fadeSlide3 8s infinite;
-    -o-animation: fadeSlide3 8s infinite;
-    -moz-animation: fadeSlide3 8s infinite;
-}
-#mainSignIn li:nth-child(4){
-    background: green;
-    animation:fadeSlide4 8s infinite;
-    -webkit-animation:fadeSlide4 8s infinite;
-    -o-animation: fadeSlide4 8s infinite;
-    -moz-animation: fadeSlide4 8s infinite;
-}
-
-@keyframe fadeSlide1 {
-    0% {
-        opacity: 0;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    30% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframe fadeSlide2 {
-    0% {
-        opacity: 0;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    30% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@keyframe fadeSlide3 {
-    0% {
-        opacity: 0;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    30% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@keyframe fadeSlide4 {
-    0% {
-        opacity: 0;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    30% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
 }
 
 
@@ -290,7 +152,9 @@ label span, #mainRegister span {
 }
 
 
+/* Forgot Password*/
 
-
-
+#mainPW h2, #mainPW p {
+    margin-bottom: 3%;
+}
 
