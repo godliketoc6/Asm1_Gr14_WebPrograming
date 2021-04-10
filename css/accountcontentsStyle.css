@@ -38,25 +38,6 @@
     align-items: center;
 }
 
-#mainSignIn ul, li {
-    list-style: none;
-}
-
-.container {
-    width: 500px;
-    padding: 2% 0;
-    margin: auto;
-    background-color:#fff;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 form {
     width: 100%;
     display: flex;
@@ -65,14 +46,14 @@ form {
 }
 
 h2 {
-    width:60%;
+    width:100%;
     text-align: center;
     font-family: title, Times, serif;
     font-size:var(--h2-font-size);
 }
 
 input {
-    width: 60%;
+    width: 100%;
     margin: 3% 0;
     border-bottom: 1px solid grey;
     font-size:var(--input-font-size);
@@ -112,22 +93,75 @@ input[type="submit"] {
 
 
 input[type="submit"]:hover {
-    background: -webkit-linear-gradient(right,orange, blue );;
+    background: -webkit-linear-gradient(right,orange, blue );
 }
 
 
+/*Sign in*/
 
-#mainSignIn .container p {
-    width:60%;
-    margin:10%;
+#mainSignIn .signCont {
+    width: 800px;
+    height: 500px;
+    background-color: snow;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+}
+
+#mainSignIn .signInCont{
+    padding: 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mainSignIn .signInCont p {
+    margin-top: 10px;
     text-align: center;
     font-size: var(--btn-font-size);
     color:black;
     cursor:pointer;
 }
 
-#mainSignIn #forgotPsw:hover {
+#mainSignIn .signInCont p:hover {
     color:red;
+}
+
+#mainSignIn .signUpCont{
+    width: 40%;
+    height: 100%;
+    background: rgb(236,226,247);
+    background: linear-gradient(137deg, rgba(236,226,247,1) 0%, rgba(224,185,238,1) 35%, rgba(221,160,252,1) 64%, rgba(213,135,237,1) 80%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#mainSignIn .signUpCont p {
+    
+    margin: 0 auto;
+}
+
+#mainSignIn .signUpCont button {
+    width: 40%;
+    margin: 10% auto;
+    padding: 2% 0;
+    margin-bottom: 30%;
+    color: black;
+    font-size: var(--btn-font-size);
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: transparent;
 }
 
 
@@ -152,11 +186,3 @@ input[type="submit"]:hover {
 #mainRegister .contBtn input:first-child:checked .contOwner {
     display: block;
 }
-
-
-/* Forgot Password*/
-
-#mainPW h2, #mainPW p {
-    margin-bottom: 3%;
-}
-
