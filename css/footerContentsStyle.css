@@ -24,7 +24,6 @@
   --all-side-margin: 10vw;
   --aboutUs-box-height: 20vh;
   --aboutUs-box-width: 40vw;
-<<<<<<< Updated upstream
 }
 
 * {
@@ -37,7 +36,6 @@
 h1,
 h2 {
   font-family: var(--title-font);
-=======
   --bar-height: 73px;
 }
 
@@ -250,7 +248,6 @@ button {
 h1,
 h2 {
   font-family: title;
->>>>>>> Stashed changes
 }
 
 p {
@@ -281,8 +278,6 @@ main h1 {
 main h2 {
   margin-left: 2rem;
 }
-<<<<<<< Updated upstream
-=======
 
 
 /* Footer */
@@ -326,4 +321,3 @@ main h2 {
 .footer-link {
     color: whitesmoke;
 }
->>>>>>> Stashed changes
