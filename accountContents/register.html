@@ -34,45 +34,41 @@
         </div>
     </header>
 
-    <main id="mainRegister">
+    <main id="mainReg">
         <!--Sign In Btn-->
-        <div class="slideContainer">
-            <ul>
-                <li><img src="" alt=""><span>1</span></li>
-                <li><img src="" alt=""><span>2</span></li>
-                <li><img src="" alt=""><span>3</span></li>
-                <li><img src="" alt=""><span>4</span></li>
-            </ul>
+        <section id="rSignInCont">
+            <p>Are you already our member?</p>
             <button type="button"><a href="signin.html">Sign In</a></button>
-        </div>
+        </section>
         <!--Register Form-->   
-        <div class="container">
-            <h2>Register Account</h2>
+        <section id="allFormCont">
+            <h1>Register Account</h1>
+            <h2>Personal Information</h2>
             <form id="registerForm" action="register.php" method="POST">
-                <label for="email"><span>Email:</span></label>
+                <label for="email"><h3>Email:</h3></label>
                 <input type="email" id="email" name="rEmail" required>
-                <label for="phoneNvm"><span>Phone Number:</span></label>
+                <label for="phoneNvm"><h3>Phone Number:</h3></label>
                 <input type="text" id="phoneNvm" name="rPhoneNvm" pattern="^[0-9]{9}" required>
-                <label for="psw"><span>Password:</span></label>
+                <label for="psw"><h3>Password:</h3></label>
                 <input type="password" id="psw" name="rPsw" required>
-                <label for="pswCheck"><span>Retype password:</span></label>
+                <label for="pswCheck"><h3>Retype password:</h3></label>
                 <input type="password" id="pswCheck" name="rpswCheck" required>
-                <label for="pic"><span>Profile picture:</span></label>
-                <input type="file" id="pic" name="rPic">
-                <label for="fName"><span>First Name:</span></label>
-                <input type="text" id="fName" name="rFName">
-                <label for="lName"><span>Last Name:</span></label>
-                <input type="text" id="lName" name="rLName">
-                <label for="address"><span>Address:</span></label>
-                <input type="text" id="address" name="rAddress">
-                <label for="city"><span>City:</span></label>
-                <input type="text" id="city" name="r">
-                <label for="zCode"><span>Zipcode:</span></label>
-                <input type="text" id="zCode" name="rZCode" pattern="^[a-zA-Z0-9]{4}|^[a-zA-Z0-9]{6}">
+                <label for="pic"><h3>Profile picture:</h3></label>
+                <input type="file" id="pic" name="rPic" required>
+                <label for="fName"><h3>First Name:</h3></label>
+                <input type="text" id="fName" name="rFName" required>
+                <label for="lName"><h3>Last Name:</h3></label>
+                <input type="text" id="lName" name="rLName" required>
+                <label for="address"><h3>Address:</h3></label>
+                <input type="text" id="address" name="rAddress" required>
+                <label for="city"><h3>City:</h3></label>
+                <input type="text" id="city" name="r" required>
+                <label for="zCode"><h3>Zipcode:</h3></label>
+                <input type="text" id="zCode" name="rZCode" pattern="^[a-zA-Z0-9]{4}|^[a-zA-Z0-9]{6}" required>
                 
                 <!--Country List-->
-                <span>Country:</span>
-                <select name="countryList">
+                <h3>Country:</h3>
+                <select name="countryList" required>
                     <option value="">Please Select</option>
                     <optgroup label="A">
                         <option value="AF">Afghanistan</option>
@@ -376,45 +372,53 @@
                 </select>    
 
                 <!--radio Btn-->
-                <h2>Account Type:</h2>
-                <div class="contBtn">
-                    <label for="owner"><span>Store Owner</span></label>
+                <h3>Account Type:</h3>
+                <div id="typeCont">
+                    <label class="radioType" for="shopper">
+                        <img src="../img/icon/shopper.png" alt="">
+                        <span>Shopper</span>
+                    </label>
+                    <input type="radio" id="shopper" name="rType" checked>
+                    <label class="radioType" for="owner">
+                        <img src="../img/icon/owner.png" alt="">
+                        <span>Store Owner</span>
+                    </label>
                     <input type="radio" id="owner" name="rType">
-                    <label for="shopper"><span>Shopper</span></label>
-                    <input type="radio" id="shopper" name="rType">
                 </div>
 
                 <!--Store Owner Only-->
-                <div class="contOwner">
-                    <label for="bName"><span>Business name</span></label>
-                    <input type="text" class="" id="bName" name="rBName">
-                    <label for="sName"><span>Store name</span></label>
-                    <input type="text" class="" id="sName" name="rSName">
-                    <select name='storeCategory'>
-                        <option value="" selected>Please Select</option>
-                        <option value="acc">Accessory stores</option>
-                        <option value="cloth">Clothing stores</option>
-                        <option value="department">Department stores</option>
-                        <option value="grocery">Grocery stores</option>
-                        <option value="kiosks">Kiosks</option>
-                        <option value="pet">Pet stores</option>
-                        <option value="pharmacy">Pharmacies</option>
-                        <option value="restaurant">Restaurants</option>
-                        <option value="service">Services</option>
-                        <option value="specialty">Specialty stores</option>
-                        <option value="tech">Technology stores</option>
-                        <option value="thrift">Thrift stores</option>
-                        <option value="toy">Toy stores</option>
-                    </select>
-                </div>
+                <h2>Business Information</h2>
+                <p>The following fields are required only to a store owner.</p>
+                <label for="bName"><h3>Business name</h3></label>
+                <input type="text" class="" id="bName" name="rBName">
+                <label for="sName"><h3>Store name</h3></label>
+                <input type="text" class="" id="sName" name="rSName">
+                <h3>Store Category:</h3>
+                <select name='storeCategory'>
+                    <option value="" selected>Please Select</option>
+                    <option value="acc">Accessory stores</option>
+                    <option value="cloth">Clothing stores</option>
+                    <option value="department">Department stores</option>
+                    <option value="grocery">Grocery stores</option>
+                    <option value="kiosks">Kiosks</option>
+                    <option value="pet">Pet stores</option>
+                    <option value="pharmacy">Pharmacies</option>
+                    <option value="restaurant">Restaurants</option>
+                    <option value="service">Services</option>
+                    <option value="specialty">Specialty stores</option>
+                    <option value="tech">Technology stores</option>
+                    <option value="thrift">Thrift stores</option>
+                    <option value="toy">Toy stores</option>
+                </select>
+
                 <!--Below Btn-->
-                <span>Please check your information.</span>
-                <div class="submitBtn">
+                <p id="warnMsg">Please check your information.</p>
+                <div id="submitBtnCont">
                     <input type="reset" value="Clear"/>
                     <input type="submit" value="Register"/>
                 </div>
             </form>
-        </div>    
+        </section>    
     </main>
 
     <!--footer-->
