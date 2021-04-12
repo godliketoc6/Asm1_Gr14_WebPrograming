@@ -12,7 +12,7 @@
 
   /* Font Size */
   --font-extreme: 2.5em;
-  --font-large: 1.5rem;
+  --font-large: 1.2rem;
   --font-medium: 0.875rem;
   --font-small: 0.75rem;
   --font-micro: 0.625rem;
@@ -28,8 +28,9 @@
 }
 
 #aboutUsMain {
-  width: 100vw;
+  background-color: blanchedalmond;
 }
+
 #aboutUsMain li {
   text-decoration: none;
   margin: 0.5rem 0;
@@ -39,41 +40,75 @@
   padding-left: 1rem;
 }
 
+#aboutUsMain a {
+  color: grey;
+}
+
+#aboutUsMain h1 {
+  width: 70vw;
+  padding: 0 15vw;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
 #aboutUsMain h1,
 #aboutUsMain h2,
 #aboutUsMain h3 {
-  font-family: title;
+  color: black;
+  font-family: title, Times, serif;
   text-align: left;
+  font-weight: 600;
 }
 
 #aboutUsMain p,
 #aboutUsMain li {
-  font-family: body;
+  font-family: body, Times, serif;
   font-size: var(--font-medium);
 }
 
-#aboutUsMain .oneMemberPfl {
-  height: 100%;
-  margin: 4rem 5%;
-  margin-top: 0;
-  padding-bottom: 30px;
-  display: flex;
-  border-bottom: 3px solid darkgrey;
+#aboutUsMain section {
+  width: 70vw;
+  margin: 0 15vw;
 }
 
+#aboutUsMain .usBox{
+  background-color: cornsilk;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+#aboutUsMain .oneMemberPfl {
+  width: 70vw;
+  margin: 4rem 0;
+  margin-top: 0;
+  padding: 50px 0;
+  display: flex;
+}
 
 #aboutUsMain .oneMemberPfl .usContact {
   width: 35%;
-  padding: 0 5%;
+  padding: 0 2.5%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 
+#aboutUsMain .oneMemberPfl .usdetail {
+  width: 100%;
+  padding: 0 5%;
+}
+
+#aboutUsMain .oneMemberPfl .reverseBox {
+  margin-left: 10%;
+} 
 
 #aboutUsMain .oneMemberPfl .usContact img {
-  width: 150px;
+  width: 160px;
   height: 200px;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -95,27 +130,22 @@
 .usContactIcon {
   display: flex;
   justify-content: space-around;
-  width: 70%;
+  width: 100%;
   margin: 0.5rem 0;
 }
 
 #aboutUsMain
-  .usContact
   .usContactIcon
-  > i {
-  width: 20%;
+  > i{
+  margin: 5%;
   color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#aboutUsMain .usContactIcon .active {
-  
+#aboutUsMain .usContactIcon .active{
   color: rgb(146, 151, 224);
-}
-
-#aboutUsMain.oneMemberPfl .usdetail {
-  width: 60%;
-  padding: 3%;
-
 }
 
 #aboutUsMain .oneMemberPfl .usdetail h3 + p {
@@ -126,16 +156,14 @@
   .oneMemberPfl
   .usdetail
   .usListContainer {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-left: -1rem;
   margin-top: 3rem;
 }
 
 #aboutUsMain
   .oneMemberPfl
-  .usdetail
-  .usListContainer
   .usList {
   margin: 0 1rem;
 }
@@ -146,10 +174,76 @@
 
 #aboutUsMain
   .oneMemberPfl
-  .usdetail
-  .usListContainer
   .usList
   ul {
-  margin-left: 1rem;
   list-style-image: url("../img/icon/checkicon.png");
 }
+
+
+
+/*iPad Screen*/
+@media only screen and (min-width:768px) {
+
+}
+
+
+/*iPhone 6 Screen*/
+@media only screen and (max-width:484px)  {
+  #aboutUsMain .oneMemberPfl{
+    flex-direction: column;
+  }
+
+  #aboutUsMain .usContact {
+    margin: 0 auto;
+  }
+
+  #aboutUsMain h1,
+  #aboutUsMain h2,
+  #aboutUsMain h3 { 
+  font-weight: 400;
+  }
+
+
+  #aboutUsMain p,
+  #aboutUsMain li {
+  font-size: var(--font-small);
+  }
+
+  #aboutUsMain .oneMemberPfl .usContact {
+    width: 100%;
+    padding-bottom: 5%;
+    border-bottom: 5px double lightgray;
+  }
+
+  #aboutUsMain .oneMemberPfl .usContact img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+  #aboutUsMain .oneMemberPfl .usdetail {
+    padding: 5%;
+  }
+
+  #aboutUsMain .oneMemberPfl .usContact h2 {
+    text-align: center;
+    font-size: var(--font-large);
+    font-weight: 700;
+  }
+
+  #aboutUsMain .oneMemberPfl .usContact .usContactIcon {
+    padding: 0;
+  }
+  
+  #aboutUsMain .reverseBox .usContact {
+    order: -1;
+  }
+}
+
+
+
+
+
+
