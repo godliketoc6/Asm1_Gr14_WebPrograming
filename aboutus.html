@@ -6,17 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/eb52f39614.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/aboutusstyle.css">
+  <link rel="stylesheet" href="style.css">
   <title>About Us</title>
 </head>
 <body>
+  <!-- Header -->
+  <div class="bar">
+    <div class="bar-content">
+        <div class="bar-content center">
+            <i class="fas fa-store-alt"></i>
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="inpNavToggle" />
+            <nav class="nav">
+                <a class="link" href="#">Home</a>
+                <a class="link" href="#">About us</a>
+                <a class="link" href="#">Fees</a>
+                <a class="link" href="#">My account</a>
+                <a class="link" href="#">Browse</a>
+                <a class="link" href="#">FAQs</a>
+                <a class="link" href="#">Contact</a>
+            </nav>
+        </div>
+    </div>
+</div>
   <main id="aboutUsMain">
-    <h1>About Us</h1>
+    <h1>Meet Our Team</h1>
     <article>
-      <section id="aboutUsTeamPfl">
+      <section class="usBox" id="aboutUsTeamPfl">
 
       </section>
       <section id="aboutUsmemberPfl">
-        <div class="oneMemberPfl">
+        <div class="oneMemberPfl usBox">
           <div class="usContact">
             <img src="img/profilePicDaniel.jpg" alt="Nguyen Ha Minh Duy's portrait">
             <h2>Nguyen Ha Minh Duy</h2>
@@ -26,9 +48,9 @@
             </div>
             <div class="usContactIcon">
               <a href="mailto:s3852307@rmit.edu.vn"><i class="fas fa-envelope-square fa-2x active"></i></a>
-              <i class="fab fa-git-square fa-2x"></i>
-              <i class="fab fa-facebook-square fa-2x"></i>
-              <i class="fab fa-instagram-square fa-2x"></i>
+              <a href="https://github.com/duysupernova"><i class="fab fa-git-square fa-2x active"></i></a>
+              <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+              <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
             </div>
           </div>
           <div class="usdetail">
@@ -56,26 +78,12 @@
             </div>
           </div>
         </div>
-        <div class="oneMemberPfl">
-          <div class="usContact">
-            <img src="img/profilePicLiz.jpg" alt="Lee Gain's portrait">
-            <h2>Lee Gain</h2>
-            <div class="departmentInfo">
-              <p>RMIT</p>
-              <p>S3878170</p>
-            </div>
-            <div class="usContactIcon">
-              <a href="mailto:s3878170@rmit.edu.vn"><i class="fas fa-envelope-square fa-2x active"></i></a>
-              <a href=""><i class="fab fa-git-square fa-2x active"></i></a>
-              <a href=""><i class="fab fa-facebook-square fa-2x active"></i></a>
-              <a href=""><i class="fab fa-instagram-square fa-2x active"></i></a>
-            </div>
-          </div>
+        <div class="oneMemberPfl usBox reverseBox">
           <div class="usdetail">
             <h3>Nationality:</h3>
               <p>Korean</p>
             <h3>Spoken Languages:</h3>
-              <p>Korean(native),Vietnamese, English</p>
+              <p>Korean(native), Vietnamese, English</p>
             <div class="usListContainer">
               <div class="usList">
                 <h3>Education</h3>
@@ -94,9 +102,117 @@
               </div>
             </div>
           </div>
+          <div class="usContact">
+            <img src="img/profilePicLiz.jpg" alt="Lee Gain's portrait">
+            <h2>Lee Gain</h2>
+            <div class="departmentInfo">
+              <p>RMIT</p>
+              <p>S3878170</p>
+            </div>
+            <div class="usContactIcon">
+              <a href="mailto:s3878170@rmit.edu.vn"><i class="fas fa-envelope-square fa-2x active"></i></a>
+              <a href="https://github.com/Lee-GaIn"><i class="fab fa-git-square fa-2x active"></i></a>
+              <a href="https://www.facebook.com/Example-Account-197494372329/"><i class="fab fa-facebook-square fa-2x active"></i></a>
+              <a href="https://www.instagram.com/exampstagram/"><i class="fab fa-instagram-square fa-2x active"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="oneMemberPfl usBox">
+          <div class="usContact">
+            <img src="img/profilePicDaniel.jpg" alt="Tran Vinh Khang's portrait">
+            <h2>Tran Vinh Khang</h2>
+            <div class="departmentInfo">
+              <p>RMIT</p>
+              <p>S3855823</p>
+            </div>
+            <div class="usContactIcon">
+              <a href="mailto:s3855823@rmit.edu.vn"><i class="fas fa-envelope-square fa-2x active"></i></a>
+              <a href="https://github.com/kwang313"><i class="fab fa-git-square fa-2x active"></i></a>
+              <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+              <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="usdetail">
+            <h3>Nationality:</h3>
+              <p>Vietnamese</p>
+            <h3>Spoken Languages:</h3>
+              <p>Vietnamese(native), English</p>
+            <div class="usListContainer">
+              <div class="usList">
+                <h3>Education</h3>
+                  <ul>
+                    <li>Diploma of Computing (Eynesbury College, Australia)</li>
+                    <li>First year in RMIT SGS</li>
+                  </ul>
+              </div>
+              <div class="usList">
+                <h3>Hobby</h3>
+                  <ul>
+                    <li>Listening to music</li>
+                    <li>Game lover</li>
+                    <li>Hypebeast</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="oneMemberPfl usBox reverseBox">
+          <div class="usdetail">
+            <h3>Nationality:</h3>
+              <p>Vietnamese, Korean</p>
+            <h3>Spoken Languages:</h3>
+              <p>Vietnamese(native), English</p>
+            <div class="usListContainer">
+              <div class="usList">
+                <h3>Education</h3>
+                  <ul>
+                    <li>3 years student in United State</li>
+                    <li>Fresh man in RMIT</li>
+                    <li>1 years of Johnson and Wales university </li>
+                  </ul>
+              </div>
+              <div class="usList">
+                <h3>Hobby</h3>
+                  <ul>
+                    <li>Game lover</li>
+                    <li>Listen to music</li>
+                    <li>Watching movie</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="usContact">
+            <img src="img/profilePicSuk.jpg" alt="Jang Moon Suk's portrait">
+            <h2>Jang Moon Suk</h2>
+            <div class="departmentInfo">
+              <p>RMIT</p>
+              <p>S3877629</p>
+            </div>
+            <div class="usContactIcon">
+              <a href="mailto:s3877629@rmit.edu.vn"><i class="fas fa-envelope-square fa-2x active"></i></a>
+              <a href="https://github.com/mookee2809"><i class="fab fa-git-square fa-2x active"></i></a>
+              <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+              <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+            </div>
+          </div>
         </div>
       </section>
     </article>
   </main>
+  <!-- Footer -->
+  <div class="footer-nav">
+    <a class="footer-link" href="#">
+        <i class="far fa-copy"></i>
+        <span class="des">Coppy Write</span>
+    </a>
+    <a class="footer-link" href="#">
+        <i class="fas fa-concierge-bell"></i>
+        <span class="des">ToS</span>
+    </a>
+    <a class="footer-link" href="#">
+        <i class="fas fa-user-secret"></i>
+        <span class="des">Privacy policy</span>
+    </a>
+</div>
 </body>
 </html>
