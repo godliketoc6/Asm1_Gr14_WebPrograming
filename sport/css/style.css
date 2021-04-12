@@ -19,6 +19,9 @@ a{
 body{
     font-family: title, body;
 }
+.hightlight{
+    font-weight: bold;
+}
 .header{
     background: radial-gradient(white,rgb(240, 240, 240));
 }
@@ -91,4 +94,101 @@ nav ul li:hover{
     text-align: center;
     width: 180px;
     border-radius: 20px;
+    transition: color 0.2s;
+    transition: background 0.2s;
+
+}
+
+.button:hover{
+    background: white;
+    color: black;
+}
+
+.container-product{
+    max-width: 1080px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.feature{
+    padding-top: 30px;
+
+}
+.col-product-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+.col-product-3 img{
+    width: 100%;
+    filter:grayscale(100%);
+    transition: 0.5s;
+    padding: 10px;
+}
+.col-product-3:hover,
+.col-product-3 img:hover,
+.col-product-4:hover ,
+.col-product-4 img:hover{
+    filter:none;
+    transform: scale(1.05);
+}
+
+
+h2{
+    text-align: center;
+}
+.rating{
+    color: tomato;
+}
+.newArrival{
+    padding-top: 30px;
+    background: black;
+    color: white;
+}
+.col-product-4{
+    flex-basis: 25%;
+    padding: 20px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+.col-product-4 img{
+    width: 100%;
+    filter:grayscale(100%);
+    transition: 0.5s;
+}
+
+/*-----Product Page----->*/
+
+.product .col-product-4{
+    background: black;
+}
+.rowProduct{
+    justify-content: space-between;
+    margin: 100px auto 50px
+}
+select{
+    border: 2px solid white ;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+.page-btn{
+    margin: 0 auto 50px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background-color: black;
+    color: white;
 }
