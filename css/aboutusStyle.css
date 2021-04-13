@@ -2,6 +2,7 @@
   font-family: title;
   src: url(../fonts/ProzaLibre-Regular.ttf);
 }
+
 @font-face {
   font-family: body;
   src: url(../fonts/OpenSans-Regular.ttf);
@@ -72,7 +73,7 @@
   margin: 0 15vw;
 }
 
-#aboutUsMain .usBox{
+#aboutUsMain .usBox {
   background-color: cornsilk;
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -105,7 +106,7 @@
 
 #aboutUsMain .oneMemberPfl .reverseBox {
   margin-left: 10%;
-} 
+}
 
 #aboutUsMain .oneMemberPfl .usContact img {
   width: 160px;
@@ -124,9 +125,7 @@
   font-weight: 700;
 }
 
-#aboutUsMain
-  .usContact
-  > .departmentInfo,
+#aboutUsMain .usContact>.departmentInfo,
 .usContactIcon {
   display: flex;
   justify-content: space-around;
@@ -134,9 +133,7 @@
   margin: 0.5rem 0;
 }
 
-#aboutUsMain
-  .usContactIcon
-  > i{
+#aboutUsMain .usContactIcon>i {
   margin: 5%;
   color: grey;
   display: flex;
@@ -144,27 +141,22 @@
   align-items: center;
 }
 
-#aboutUsMain .usContactIcon .active{
+#aboutUsMain .usContactIcon .active {
   color: rgb(146, 151, 224);
 }
 
-#aboutUsMain .oneMemberPfl .usdetail h3 + p {
+#aboutUsMain .oneMemberPfl .usdetail h3+p {
   margin: 1rem 0;
 }
 
-#aboutUsMain
-  .oneMemberPfl
-  .usdetail
-  .usListContainer {
+#aboutUsMain .oneMemberPfl .usdetail .usListContainer {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
 }
 
-#aboutUsMain
-  .oneMemberPfl
-  .usList {
+#aboutUsMain .oneMemberPfl .usList {
   margin: 0 1rem;
 }
 
@@ -172,24 +164,19 @@
   margin-bottom: 0.5rem;
 }
 
-#aboutUsMain
-  .oneMemberPfl
-  .usList
-  ul {
+#aboutUsMain .oneMemberPfl .usList ul {
   list-style-image: url("../img/icon/checkicon.png");
 }
 
 
 
 /*iPad Screen*/
-@media only screen and (min-width:768px) {
-
-}
+@media only screen and (min-width:768px) {}
 
 
 /*iPhone 6 Screen*/
-@media only screen and (max-width:484px)  {
-  #aboutUsMain .oneMemberPfl{
+@media only screen and (max-width:484px) {
+  #aboutUsMain .oneMemberPfl {
     flex-direction: column;
   }
 
@@ -199,14 +186,14 @@
 
   #aboutUsMain h1,
   #aboutUsMain h2,
-  #aboutUsMain h3 { 
-  font-weight: 400;
+  #aboutUsMain h3 {
+    font-weight: 400;
   }
 
 
   #aboutUsMain p,
   #aboutUsMain li {
-  font-size: var(--font-small);
+    font-size: var(--font-small);
   }
 
   #aboutUsMain .oneMemberPfl .usContact {
@@ -221,7 +208,7 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-}
+  }
 
   #aboutUsMain .oneMemberPfl .usdetail {
     padding: 5%;
@@ -236,14 +223,8 @@
   #aboutUsMain .oneMemberPfl .usContact .usContactIcon {
     padding: 0;
   }
-  
+
   #aboutUsMain .reverseBox .usContact {
     order: -1;
   }
 }
-
-
-
-
-
-
