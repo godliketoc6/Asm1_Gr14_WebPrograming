@@ -220,6 +220,11 @@
     font-weight: 700;
   }
 
+  #aboutUsMain .oneMemberPfl .usdetail h3 {
+    font-size: var(--font-medium);
+    font-weight: 700;
+  }
+
   #aboutUsMain .oneMemberPfl .usContact .usContactIcon {
     padding: 0;
   }

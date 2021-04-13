@@ -41,7 +41,8 @@
 }
 
 #mypageMain .titleCont {
-    padding-bottom: 10%;
+    padding: 10% 3%;
+    padding-top: 0;
     align-content: flex-start;
     justify-content: space-between;
 }
@@ -107,7 +108,19 @@
     font-size: 1.0rem;
 }
 
+@media only screen and (max-width:600px){
+    #mypageMain h2{
+        font-size: 1rem;
+    }
 
+    #mypageMain h3{
+        font-size: 0.5rem;
+    }
+
+    #mypageMain p{
+        font-size: 0.6rem;
+    }
+}
 
 
 

@@ -10,29 +10,7 @@
 </head>
 
 <body>
-    <!--header-->
-    <header>
-        <div class="bar">
-            <div class="bar-content">
-                <div class="bar-content center">
-                    <i class="fas fa-store-alt"></i>
-                    <input type="checkbox" id="inpNavToggle">
-                    <label class="bar__nav-toggle" for="inpNavToggle">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                    <nav class="nav">
-                        <a class="link" href="#">Home</a>
-                        <a class="link" href="#">About us</a>
-                        <a class="link" href="#">Fees</a>
-                        <a class="link" href="#">My account</a>
-                        <a class="link" href="#">Browse</a>
-                        <a class="link" href="#">FAQs</a>
-                        <a class="link" href="#">Contact</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+
 
     <main id="mainReg">
         <!--Sign In Btn-->
@@ -40,31 +18,33 @@
             <p>Are you already our member?</p>
             <button type="button"><a href="signin.html">Sign In</a></button>
         </section>
+
         <!--Register Form-->   
         <section id="allFormCont">
             <h1>Register Account</h1>
             <h2>Personal Information</h2>
+            <p>The following fields are required for all member.</p>
             <form id="registerForm" action="register.php" method="POST">
                 <label for="email"><h3>Email:</h3></label>
-                <input type="email" id="email" name="rEmail" required>
+                <input type="email" id="rEmail" name="rEmail" required>
                 <label for="phoneNvm"><h3>Phone Number:</h3></label>
-                <input type="text" id="phoneNvm" name="rPhoneNvm" required>
+                <input type="text" id="rPhoneNvm" name="rPhoneNvm" required>
                 <label for="psw"><h3>Password:</h3></label>
-                <input type="password" id="psw" name="rPsw" required>
+                <input type="password" id="psw" name="psw" required>
                 <label for="pswCheck"><h3>Retype password:</h3></label>
-                <input type="password" id="pswCheck" name="rpswCheck" required>
+                <input type="password" id="pswCheck" name="pswCheck" required>
                 <label for="pic"><h3>Profile picture:</h3></label>
-                <input type="file" id="pic" name="rPic" required>
+                <input type="file" id="pic" name="pic" required>
                 <label for="fName"><h3>First Name:</h3></label>
-                <input type="text" id="fName" name="rFName" required>
+                <input type="text" id="fName" name="fName" required>
                 <label for="lName"><h3>Last Name:</h3></label>
-                <input type="text" id="lName" name="rLName" required>
+                <input type="text" id="lName" name="lName" required>
                 <label for="address"><h3>Address:</h3></label>
-                <input type="text" id="address" name="rAddress" required>
+                <input type="text" id="address" name="address" required>
                 <label for="city"><h3>City:</h3></label>
-                <input type="text" id="city" name="r" required>
+                <input type="text" id="city" name="city" required>
                 <label for="zCode"><h3>Zipcode:</h3></label>
-                <input type="text" id="zCode" name="rZCode" pattern="^[a-zA-Z0-9]{4}|^[a-zA-Z0-9]{6}" required>
+                <input type="text" id="zCode" name="zCode" pattern="^[a-zA-Z0-9]{4}|^[a-zA-Z0-9]{6}" required>
                 
                 <!--Country List-->
                 <h3>Country:</h3>
@@ -375,12 +355,12 @@
                 <h3>Account Type:</h3>
                 <div id="typeCont">
                     <label class="radioType" for="shopper">
-                        <img src="../img/icon/shopper.png" alt="">
+                        <img src="../img/icon/shopper.png" alt="This is an icon of shopper. The icon displays person holds two shopping bags..">
                         <span>Shopper</span>
                     </label>
                     <input type="radio" id="shopper" name="rType" checked>
                     <label class="radioType" for="owner">
-                        <img src="../img/icon/owner.png" alt="">
+                        <img src="../img/icon/owner.png" alt="This is an icon of owner. The icon displays a person holds a briefcase.">
                         <span>Store Owner</span>
                     </label>
                     <input type="radio" id="owner" name="rType">
@@ -388,11 +368,11 @@
 
                 <!--Store Owner Only-->
                 <h2>Business Information</h2>
-                <p>The following fields are required only to a store owner.</p>
+                <p>The following fields are required only for a store owner.</p>
                 <label for="bName"><h3>Business name</h3></label>
-                <input type="text" class="" id="bName" name="rBName">
+                <input type="text" class="" id="bName" name="bName">
                 <label for="sName"><h3>Store name</h3></label>
-                <input type="text" class="" id="sName" name="rSName">
+                <input type="text" class="" id="sName" name="sName">
                 <h3>Store Category:</h3>
                 <select name='storeCategory'>
                     <option value="" selected>Please Select</option>
@@ -412,7 +392,7 @@
                 </select>
 
                 <!--Below Btn-->
-                <p id="warnMsg">Please check your information.</p>
+                <!-- <p id="warnMsg">Please check your information.</p>-->
                 <div id="submitBtnCont">
                     <input type="reset" value="Clear"/>
                     <input type="submit" value="Register"/>
@@ -421,21 +401,5 @@
         </section>    
     </main>
 
-    <!--footer-->
-    <footer>
-        <nav class="footer-nav">
-            <a class="footer-link" href="#">
-                <i class="far fa-copy"></i>
-                <span class="des">Coppy Write</span>
-            </a>
-            <a class="footer-link" href="#">
-                <i class="fas fa-concierge-bell"></i>
-                <span class="des">ToS</span>
-            </a>
-            <a class="footer-link" href="#">
-                <i class="fas fa-user-secret"></i>
-                <span class="des">Privacy policy</span>
-            </a>
-        </nav>
-    </footer>
+
 </body>
