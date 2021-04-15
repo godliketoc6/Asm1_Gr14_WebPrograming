@@ -10,6 +10,7 @@ body {
     background-color: #9BE8FF;
 }
 
+
 .center {
     width: 100%;
     max-width: 1200px;
@@ -135,6 +136,7 @@ h3 {
     color: white;
     font-size: 20px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .dropdown {
