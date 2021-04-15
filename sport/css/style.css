@@ -192,3 +192,94 @@ select{
     background-color: black;
     color: white;
 }
+.container-product img{
+    width: 200px;
+}
+/*-----Product detail----->*/
+.container-product-detail{
+    max-width: 1080px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.container-product-detail img{
+    padding-top: 1rem;
+}
+
+.container-product-detail h1{
+    font-size: 50px;
+    line-height: 30px;
+}
+
+.button1{
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 10px;
+    margin: 30px 0px;
+    text-align: center;
+    width: 180px;
+    border-radius: 20px;
+    transition: color 0.2s;
+    transition: background 0.2s;
+
+}
+
+.button1:hover{
+    background: black;
+    color: white;
+}
+
+.container-product-detail select{
+    border: 2px solid white ;
+    background: black;
+    color: white;
+    padding: 8px;
+}
+
+
+/*-----cart----->*/
+.container-cart{
+    max-width: 1080px;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+.container-cart img{
+    width: 200px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    padding-left: 0.5rem;
+    text-align: left;
+    padding-top: 5px;
+    color: white;
+    background-color: black;
+}
+td{
+    padding: 10px 5px;
+}
+.buttons{
+    margin: 0px 2rem;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid black;
+    width: 100%;
+    max-width: 350px;
+}
