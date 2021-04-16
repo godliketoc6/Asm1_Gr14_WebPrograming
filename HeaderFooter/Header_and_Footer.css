@@ -4,10 +4,18 @@
     --bar-height: 73px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Proza Libre', sans-serif;
     background-color: #9BE8FF;
+    height: 100vh;
+    font-family: 'Proza Libre', sans-serif;
 }
 
 
@@ -115,90 +123,6 @@ body {
     }
 }
 
-
-/* Body */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-    font-family: 'Proza Libre', sans-serif;
-}
-
-a,
-h3 {
-    font-family: 'Proza Libre', sans-serif;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.dropdown {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: 90%;
-    margin: auto;
-}
-
-.new-store-dropdown,
-.new-products-dropdown,
-.featured-stores-dropdown,
-.featured-products-dropdown {
-    height: 200px;
-    width: 200px;
-}
-
-.new-store-dropdown ul,
-.new-products-dropdown ul,
-.featured-stores-dropdown ul,
-.featured-products-dropdown ul {
-    background: rgb(107, 204, 204);
-    height: 200px;
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    border-radius: 6px;
-}
-
-.new-store-dropdown a,
-.new-products-dropdown a,
-.featured-stores-dropdown a,
-.featured-products-dropdown a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.new-store-dropdown li,
-.new-products-dropdown li,
-.featured-stores-dropdown li,
-.featured-products-dropdown li {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.new-store-dropdown li:hover,
-.new-products-dropdown li::hover,
-.featured-stores-dropdown li::hover,
-.featured-products-dropdown li::hover {
-    background-color: rgb(60, 95, 95);
-}
-
 .dropdown button {
     background: none;
     border: none;
@@ -226,6 +150,30 @@ h3 {
     justify-content: space-around;
     align-items: center;
     overflow-x: auto;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 17px;
+    color: whitesmoke;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1 ease-in-out;
+}
+
+.footer-link:hover {
+    background-color: #365194;
+}
+
+.footer-link {
+    color: whitesmoke;
 }
 
 @media screen and (max-width: 767px) {
