@@ -9,8 +9,6 @@
 :root {
     /* Colors */
     --signIn-span:#606e83;
-    --back-color:#edffff;
-    --back-white:rgb(216, 212, 212);
 
     /* Font Size */
     --h1-font-size:2.5rem;
@@ -41,7 +39,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--back-color);
 }
 
 form {
@@ -255,6 +252,11 @@ button:focus::before{
     padding: 2% 0;
 }
 
+#signUpCont button a{
+    color: aliceblue;
+    font-weight: 600;
+}
+
 /*Register*/
 #mainReg {
     flex-direction: column;
@@ -286,6 +288,11 @@ button:focus::before{
 #rSignInCont button {
     width: 50%;
     padding: 1% 0;
+}
+
+#rSignInCont button a{
+    color: aliceblue;
+    font-weight: 600;
 }
 
 #rSignInCont a, #rSignInCont p{
