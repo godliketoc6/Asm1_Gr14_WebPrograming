@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;1,400&display=swap');
+
+body{
+  background-image: url('pexels-stephan-seeber-1054289.jpg');
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: space-around;
+  padding: 10px;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  margin: 20px;
+  height: 577px;
+  width: 250px;
+}
+
+.name{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.price{
+  font-size: 2rem;
+}
+
+.content{
+  font-size: 22px;
+}
+
+.button{
+  border-radius: 7px;
+  height: 40px;
+  width: 250px;
+  border: none;
+  outline: 0;
+  box-shadow: 2px 4px 2px 3px rgba(0, 0, 0, 0.2);
+  font-family: 'Proza Libre', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+/* .card :last-child{
+  width: ;
+} */
