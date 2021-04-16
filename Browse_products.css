@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;1,400&display=swap');
 
 body{
-  background-image: url('luke-chesser-pJadQetzTkI-unsplash.jpg');
+  background-image: url('/New_products/luke-chesser-pJadQetzTkI-unsplash.jpg');
   background-size: cover;
 }
 
@@ -22,8 +22,8 @@ body{
   font-size: 14px;
   padding: 20px;
   margin: 140px;
-  height: 577px;
-  width: 250px;
+  height: 562px;
+  width: 479px;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
   border-top: 0.5px solid rgba(255,255,255,0.5);
@@ -34,29 +34,35 @@ body{
 .name{
   font-weight: bold;
   font-size: 2rem;
-  margin: 80px
+  margin: 80px;
+  width: 327px;
 }
 
-.price{
+/* .price{
   font-size: 2rem;
   color: #f8f8ff;
   margin: 85px;
-}
+} */
 
 .content{
   font-size: 22px;
   color: white;
+  margin: 100px;
 }
 
 .button{
   border-radius: 7px;
-  height: 40px;
+  height: 60px;
   width: 250px;
   border: none;
   outline: 0;
   box-shadow: 2px 4px 2px 3px rgba(0, 0, 0, 0.2);
   font-family: 'Proza Libre', sans-serif;
   background: rgba(173, 216, 230,0.3);
+}
+
+.button:hover {
+  box-shadow: 2px 4px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
 a{
