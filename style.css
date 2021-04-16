@@ -19,7 +19,7 @@ body {
     box-sizing: border-box,
 }
 
-.bar {
+header {
     z-index: 1;
     display: flex;
     top: 0;
@@ -181,7 +181,7 @@ body {
         margin: 0 0 73px 0;
     }
 
-    .footer-nav {
+    footer {
         position: fixed;
         bottom: 0;
         width: 100%;
