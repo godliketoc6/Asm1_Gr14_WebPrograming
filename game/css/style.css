@@ -23,7 +23,10 @@ body{
     font-weight: bold;
 }
 .header{
-    background: radial-gradient(white,rgb(240, 240, 240));
+    background-color: white;
+}
+.homeimg{
+    animation: float 6s ease-in-out infinite;
 }
 .container{
     max-width: 1300px;
@@ -36,7 +39,7 @@ body{
     display: flex;
     align-items: center;
     padding: 20px 200px;
-    background-color: black;
+    background-color: #F9495F;
 }
 
 #logo{
@@ -282,4 +285,22 @@ td{
     border-top: 3px solid black;
     width: 100%;
     max-width: 350px;
+}
+
+@keyframes float {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-20px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+.col-product-3 img{
+    width: 300px;
+}
+.col-product-3 img{
+    width: 300px;
 }
