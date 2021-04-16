@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+    --bar-height: 73px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.center {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box,
+}
+
+.bar {
+    z-index: 1;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--bar-height);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    transition: background 0.15s;
+}
+
+.bar--bg {
+    background: #9BE8FF;
+}
+
+.bar-content {
+    height: 100%;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar-logo {
+    height: 100%;
+}
+
+.bar-bar {
+    cursor: pointer;
+}
+
+.nav-bar>i {
+    color: white;
+    font-size: 2em;
+}
+
+#inpNavToggle {
+    display: none;
+}
+
+#inpNavToggle:checked~.nav {
+    display: flex;
+}
+
+.nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    top: var(--bar-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--bar-height));
+    padding: 32px;
+    background: #778899;
+    box-sizing: border-box;
+}
+
+.link {
+    font-size: 20px;
+    padding: 16px 0;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid rgba(177, 192, 180, 0.5);
+}
+
+.link:hover {
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 767px) {
+    .bar__nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        display: initial;
+        position: static;
+        width: unset;
+        height: unset;
+        padding: unset;
+        background: transparent;
+    }
+
+    .link {
+        border-bottom: none;
+    }
+
+    .link:not(:last-of-type) {
+        margin-right: 24px;
+    }
+}
+
+.dropdown button {
+    background: none;
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.dropdown button:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-nav {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1 ease-in-out;
+}
+
+.footer-link:hover {
+    background-color: white;
+    color:black;
+}
+
+.footer-link {
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+
+    .new-store-dropdown,
+    .new-products-dropdown,
+    .featured-stores-dropdown,
+    .featured-products-dropdown {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .bar {
+        display: block;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: var(--bar-height);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+        transition: background 0.15s;
+    }
+
+
+    /* Footer */
+    .footer-body {
+        margin: 0 0 73px 0;
+    }
+
+    .footer-nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 45px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        background-color: #A5E3F9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: auto;
+    }
+
+    .footer-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        min-width: 50px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: 'Proza Libre', sans-serif;
+        font-size: 17px;
+        color: whitesmoke;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color 0.1 ease-in-out;
+    }
+
+    .footer-link:hover {
+        background-color: #365194;
+    }
+
+    .footer-link {
+        color: whitesmoke;
+    }
+}
