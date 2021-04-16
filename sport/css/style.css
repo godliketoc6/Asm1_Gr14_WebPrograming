@@ -166,7 +166,8 @@ h2{
     transition: 0.5s;
 }
 .col-product-4 img{
-    width: 100%;
+    width: 200px;
+    height: 200px;
     filter:grayscale(100%);
     transition: 0.5s;
 }
@@ -176,6 +177,7 @@ h2{
 .product .col-product-4{
     background: black;
 }
+
 .rowProduct{
     justify-content: space-between;
     margin: 100px auto 50px

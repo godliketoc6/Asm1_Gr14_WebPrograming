@@ -118,10 +118,12 @@ input[type="submit"], input[type="reset"]{
     font-family: title;
     cursor:pointer;
     background: -webkit-linear-gradient(137deg,rgba(255,123,2,1) 0%, rgba(247,219,86,1) 35%, rgba(252,205,69,1) 69%, rgba(254,132,0,1) 96%, rgba(232,143,48,1) 100%);
+    transition: 1s;
 }
 
 
 input[type="submit"]:hover, input[type="reset"]:hover {
+    
     background: -webkit-linear-gradient(137deg, rgba(239,203,165,1) 0%, rgba(255,123,2,1) 44%, rgba(255,123,2,1) 67%, rgba(239,203,165,1) 100%);
 }
 
