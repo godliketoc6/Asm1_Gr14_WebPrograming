@@ -27,17 +27,15 @@
     border: none;
     outline: none;
     background: none;
-
 }
 
-#mainSignIn, #mainRegister, #mainPW{
+#mainPW{
     width: 100vw;
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 form {
     width: 100%;
@@ -75,9 +73,9 @@ label p, #mainRegister p {
     color:var(--signIn-span);
 }
 
-
-input[type="submit"] {
-    height: 35px;
+input[type="submit"]{
+    height: 40px;
+    border: none;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -89,12 +87,11 @@ input[type="submit"] {
     font-weight: 600;
     font-family: title;
     cursor:pointer;
-    background: -webkit-linear-gradient(left,orange, blue );
+    background: -webkit-linear-gradient(right, #4981af, #5933c2);
 }
 
-
-input[type="submit"]:hover {
-    background: -webkit-linear-gradient(right,orange, blue );;
+input[type="submit"]:hover{
+    background: -webkit-linear-gradient(left, #4981af, #5933c2);
 }
 
 input[type="submit"]:active {
@@ -105,7 +102,15 @@ input[type="submit"]:active {
     -o-transform: skewX(0.5);
 }
 
-#mainPW #pwCont {
+input:invalid {
+    border-bottom: 2px solid rgb(241, 68, 37);
+}
+
+input:valid {
+    border-bottom: 2px solid rgb(53, 97, 36);
+}
+
+#pwCont {
     width: 410px;
     height: 267px;
     padding: 30px;
@@ -116,10 +121,10 @@ input[type="submit"]:active {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     display: flex;
+    justify-content:center;
     flex-direction: column;
     align-items: center;
 }
-
 
 #mainPW h2 {
     margin-bottom: 3%;
@@ -131,14 +136,17 @@ input[type="submit"]:active {
     color: grey;
 }
 
+#pwCont input[type="submit"]{
+    border: none;
+}
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:767px){
     #pwCont {
         margin: 10%;
     }
 
     #pwCont h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #pwCont p {
@@ -149,5 +157,3 @@ input[type="submit"]:active {
         margin-top: 10%;
     }
 }
-
-

@@ -7,23 +7,17 @@
   src: url(../fonts/OpenSans-Regular.ttf);
 }
 
-:root {
+:root{
   /* Colors */
-  --font-white: #f5f5f5;
-  --font-black: #000000;
-  --background-color: #d4d8ff;
+  --back-color:#edffff;
+  --back-white:rgb(255,255,255);
 
   /* Font Size */
-  --font-extreme: 2.5em;
-  --font-large: 1.125rem;
-  --font-medium: 0.875rem;
-  --font-small: 0.75rem;
-  --font-micro: 0.625rem;
-
-  /* Size */
-  --all-side-margin: 10vw;
-  --aboutUs-box-height: 20vh;
-  --aboutUs-box-width: 40vw;
+  --font-large: 2rem;
+  --font-medium-plus: 1.7rem;
+  --font-medium: 1.2rem;
+  --font-small: 1rem;
+  --font-micro: 0.8rem;
 }
 
 * {
@@ -33,291 +27,89 @@
 }
 
 /*Copyright, Tos, Privacy Policy*/
-h1,
-h2 {
-  font-family: var(--title-font);
-  --bar-height: 73px;
-}
-
-
-/* Header */
-@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;1,400&display=swap');
-
 
 body {
-    margin: 0;
-    font-family: 'Proza Libre', sans-serif;
-    background-color: #9BE8FF;
-}
-
-.center {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px;
-    box-sizing: border-box,
-}
-
-.bar {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--bar-height);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-    transition: background 0.15s;
-}
-
-.bar--bg {
-    background: #9BE8FF;
-}
-
-.bar-content {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.bar-logo {
-    height: 100%;
-}
-
-.bar-bar {
-    cursor: pointer;
-}
-
-.nav-bar>i {
-    color: white;
-    font-size: 2em;
-}
-
-#inpNavToggle {
-    display: none;
-}
-
-#inpNavToggle:checked~.nav {
-    display: flex;
-}
-
-.nav {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: var(--bar-height);
-    left: 0;
-    width: 100%;
-    height: calc(100vh - var(--bar-height));
-    padding: 32px;
-    background: #778899;
-    box-sizing: border-box;
-}
-
-.link {
-    font-size: 20px;
-    padding: 16px 0;
-    text-decoration: none;
-    color: white;
-    border-bottom: 1px solid rgba(177, 192, 180, 0.5);
-}
-
-.link:hover {
-    opacity: 0.8;
-}
-
-@media screen and (min-width: 767px) {
-    .bar__nav-toggle {
-        display: none;
-    }
-
-    .nav {
-        display: initial;
-        position: static;
-        width: unset;
-        height: unset;
-        padding: unset;
-        background: transparent;
-    }
-
-    .link {
-        border-bottom: none;
-    }
-
-    .link:not(:last-of-type) {
-        margin-right: 24px;
-    }
-}
-
-/* Body */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-  
-body{
-    height: 100vh;
-    font-family: 'Proza Libre', sans-serif;
-}
-a,
-button {
-    font-family: 'Proza Libre', sans-serif;
-}
-  
-.dropdown{
-    height: 80vh;
-    position: relative;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-}
-  
-.new-store-dropdown, 
-.new-products-dropdown, 
-.featured-stores-dropdown, 
-.featured-products-dropdown {
-    position: relative;
-}
-  
-  .new-store-dropdown ul, 
-  .new-products-dropdown ul, 
-  .featured-stores-dropdown ul, 
-  .featured-products-dropdown ul{
-    position: absolute;
-    background: rgb(107, 204, 204);
-    margin-top: 10px;
-    height: 200px;
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    border-radius: 6px;
-  }
-  
-  .new-store-dropdown a, 
-  .new-products-dropdown a, 
-  .featured-stores-dropdown a, 
-  .featured-products-dropdown a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .new-store-dropdown li, 
-  .new-products-dropdown li, 
-  .featured-stores-dropdown li, 
-  .featured-products-dropdown li{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .new-store-dropdown li:hover, 
-  .new-products-dropdown li::hover, 
-  .featured-stores-dropdown li::hover, 
-  .featured-products-dropdown li::hover{
-    background-color: rgb(60, 95, 95);
-  } 
-  
-  .dropdown button{
-    background: none;
-    border: none;
-    color: white;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  
-  .dropdown button:hover{
-    color: black;
-    text-decoration: none;
-  }
-
-
-
-/*Copyright, Tos, Privacy Policy*/
-h1,
-h2 {
-  font-family: title;
-}
-
-p {
-  font-family: body;
-  margin: 1rem 3rem;
-}
-
-ul {
-  margin: 2rem;
-  margin-left: 4rem;
-}
-
-ul li {
-  margin-bottom: 0.5rem;
-  font-family: body;
-  font-size: 1rem;
+  background-color: var(--back-color);
 }
 
 main {
-  margin: 0 20vw;
+  margin: 0 10vw;
+  width: 70vw;
+  padding: 10% 5vw;
+  background-color: var(--back-white);
 }
 
-main h1 {
-  margin: 1rem 0;
+h1,
+h2 {
+  font-family: title, Times, serif;
+  margin: 10% 0 3% 0;
+}
+
+p, ul, ul li, a{
+  font-family: body, Times, serif;
+  font-size: var(--font-small);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding: 0 2px;
+}
+
+h1 {
+  font-size: var(--font-large);
+  text-align: center;
+}
+h2 {
+  font-size: var(--font-medium-plus);
+}
+
+p {
+  margin-bottom: 3%;
   margin-left: 1rem;
 }
 
-main h2 {
-  margin-left: 2rem;
+ul {
+  margin-left: 10%;
 }
 
-
-/* Footer */
-@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;1,400&display=swap');
-
-.footer-body {
-    margin: 0 0 73px 0;
+ul li {
+  margin-bottom: 1%;
 }
 
-.footer-nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    background-color: #A5E3F9;
-    display: flex;
-    overflow-x: auto;
+a:link, a:visited {
+  text-decoration-line: underline;
+  -moz-text-decoration-line: underline;
+  text-decoration-style: solid;
+  -moz-text-decoration-style: solid;
+  text-decoration-color: #89abc6;
+  -moz-text-decoration-color: #89abc6;
+  text-decoration-thickness: 2px;
 }
 
-.footer-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
-    min-width: 50px;
-    overflow: hidden;
-    white-space: nowrap;
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 17px;
-    color: whitesmoke;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    transition: background-color 0.1 ease-in-out;
+a:hover{
+  background-color: #9499b7b7;
 }
 
-.footer-link:hover {
-    background-color: #365194;
+@media only screen and (max-width:1023px){
+  h1{
+    font-size: var(--font-medium-plus);
+  }
+
+  h2{
+    font-size: var(--font-medium);
+  }
 }
 
-.footer-link {
-    color: whitesmoke;
+@media only screen and (max-width:767px){
+  h1{
+    font-size: var(--font-medium);
+  }
+
+  h2{
+    font-size: var(--font-small);
+  }
+  p, ul, ul li, a{
+    font-size: var(--font-micro);
+  }
 }
