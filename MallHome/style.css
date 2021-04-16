@@ -134,7 +134,7 @@ body {
     font-size: 14px;
     padding: 20px;
     margin: 60px;
-    height: 632px;
+    height: 680px;
     width: 250px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
@@ -158,6 +158,7 @@ body {
   .content{
     font-size: 22px;
     color: white;
+    height: 62px;
   }
   
   .button{
