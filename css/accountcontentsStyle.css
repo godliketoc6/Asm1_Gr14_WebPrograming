@@ -33,12 +33,13 @@
 }
 
 #mainSignIn, #mainReg, #mainPW{
-    width: 100vw;
     height: auto;
-    padding: 10% 0;
+    padding: 5% 0;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 form {
@@ -193,7 +194,7 @@ button:focus::before{
 #signCont {
     width: 80vw;
     height: 500px;
-    margin: 0 5vw;
+    margin: 0 10vw;
     background-color: snow;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -282,7 +283,7 @@ button:focus::before{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(46, 36, 138, 0.37);
+    background-color: #009688;
 }
 
 #rSignInCont button {
@@ -291,7 +292,7 @@ button:focus::before{
 }
 
 #rSignInCont button a{
-    color: aliceblue;
+    color: #f8fdff;
     font-weight: 600;
 }
 
@@ -410,7 +411,7 @@ button:focus::before{
 }
 
 /*iPad Screen*/
-@media only screen and (mix-width:1023px){
+@media only screen and (max-width:1023px){
     #mainSignIn {
         width: 90vw;
         margin: 10vh 5vw;

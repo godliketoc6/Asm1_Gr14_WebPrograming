@@ -1,71 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;1,400&display=swap');
-
-:root {
-    --bar-height: 73px;
-}
-
-body {
-    margin: 0;
-    font-family: 'Proza Libre', sans-serif;
-    background-color: #9BE8FF;
-}
-
-
-.center {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px;
-    box-sizing: border-box,
-}
-
-header {
-    z-index: 1;
-    display: flex;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--bar-height);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-    transition: background 0.15s;
-}
-
-.bar--bg {
-    background: #9BE8FF;
-}
-
-.bar-content {
-    height: 100%;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.bar-logo {
-    height: 100%;
-}
-
-.bar-bar {
-    cursor: pointer;
-}
-
-.nav-bar>i {
-    color: white;
-    font-size: 2em;
-}
-
-#inpNavToggle {
-    display: none;
-}
-
-#inpNavToggle:checked~.nav {
-    display: flex;
-}
-
 .nav {
     display: none;
     flex-direction: column;
@@ -76,7 +8,7 @@ header {
     width: 100%;
     height: calc(100vh - var(--bar-height));
     padding: 32px;
-    background: #778899;
+    background-color: var(--basic-color);
     box-sizing: border-box;
 }
 
@@ -90,6 +22,50 @@ header {
 
 .link:hover {
     opacity: 0.8;
+    background-color: var(--hover-color);
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: var(--basic-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.footer-body {
+    margin: 0 0 73px 0;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 17px;
+    color: whitesmoke;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1 ease-in-out;
+}
+
+.footer-link {
+    color: whitesmoke;
+}
+
+.footer-link:hover {
+    background-color: var(--hover-color);
 }
 
 @media screen and (min-width: 767px) {
@@ -113,47 +89,4 @@ header {
     .link:not(:last-of-type) {
         margin-right: 24px;
     }
-}
-
-
-/* Footer */
-.footer-body {
-    margin: 0 0 73px 0;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    background-color: #A5E3F9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: auto;
-}
-
-.footer-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
-    min-width: 50px;
-    overflow: hidden;
-    white-space: nowrap;
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 17px;
-    color: whitesmoke;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    transition: background-color 0.1 ease-in-out;
-}
-
-.footer-link:hover {
-    background-color: #365194;
-}
-
-.footer-link {
-    color: whitesmoke;
 }

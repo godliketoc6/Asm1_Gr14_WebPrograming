@@ -9,8 +9,6 @@
 
 :root{
   /* Colors */
-  --back-color:#edffff;
-  --back-white:rgb(255,255,255);
 
   /* Font Size */
   --font-large: 2rem;
@@ -28,15 +26,9 @@
 
 /*Copyright, Tos, Privacy Policy*/
 
-body {
-  background-color: var(--back-color);
-}
-
 main {
-  margin: 0 10vw;
-  width: 70vw;
+  width: 90vw;
   padding: 10% 5vw;
-  background-color: var(--back-white);
 }
 
 h1,
@@ -77,7 +69,7 @@ ul li {
   margin-bottom: 1%;
 }
 
-a:link, a:visited {
+.footerContent a:link, .footerContent a:visited {
   text-decoration-line: underline;
   -moz-text-decoration-line: underline;
   text-decoration-style: solid;
