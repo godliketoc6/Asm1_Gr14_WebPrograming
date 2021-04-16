@@ -116,150 +116,64 @@ body {
 
 
 /* Body */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-    font-family: 'Proza Libre', sans-serif;
-}
-
-a,
-h3 {
-    font-family: 'Proza Libre', sans-serif;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.dropdown {
-    position: relative;
+.container{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: 90%;
-    margin: auto;
-}
-
-.new-store-dropdown,
-.new-products-dropdown,
-.featured-stores-dropdown,
-.featured-products-dropdown {
-    height: 200px;
-    width: 200px;
-}
-
-.new-store-dropdown ul,
-.new-products-dropdown ul,
-.featured-stores-dropdown ul,
-.featured-products-dropdown ul {
-    background: rgb(107, 204, 204);
-    height: 200px;
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    border-radius: 6px;
-}
-
-.new-store-dropdown a,
-.new-products-dropdown a,
-.featured-stores-dropdown a,
-.featured-products-dropdown a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.new-store-dropdown li,
-.new-products-dropdown li,
-.featured-stores-dropdown li,
-.featured-products-dropdown li {
-    width: 100%;
-    height: 100%;
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-}
-
-.new-store-dropdown li:hover,
-.new-products-dropdown li::hover,
-.featured-stores-dropdown li::hover,
-.featured-products-dropdown li::hover {
-    background-color: rgb(60, 95, 95);
-}
-
-.dropdown button {
-    background: none;
-    border: none;
+    align-items: stretch;
+    align-content: space-around;
+    padding: 10px;
+    font-family: 'Proza Libre', sans-serif;
+  }
+  
+  .card{
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    margin: 60px;
+    height: 632px;
+    width: 250px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 0.5px solid rgba(255,255,255,0.5);
+    border-left: 0.5px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+  }
+  
+  .name{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right: auto;
+  }
+  
+  .price{
+    font-size: 2rem;
+    color: #f8f8ff;
+    margin: 85px;
+  }
+  
+  .content{
+    font-size: 22px;
     color: white;
+  }
+  
+  .button{
+    border-radius: 7px;
+    height: 40px;
+    width: 250px;
+    border: none;
+    outline: 0;
+    box-shadow: 2px 4px 2px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Proza Libre', sans-serif;
+    background: rgba(173, 216, 230,0.3);
+  }
+  
+  a{
     text-decoration: none;
-    text-transform: capitalize;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.dropdown button:hover {
-    color: black;
-    text-decoration: none;
-}
-
-.footer-nav {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    background-color: #A5E3F9;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow-x: auto;
-}
-
-@media screen and (max-width: 767px) {
-
-    .new-store-dropdown,
-    .new-products-dropdown,
-    .featured-stores-dropdown,
-    .featured-products-dropdown {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        display: block;
-        margin-bottom: 50px;
-    }
-
-    .dropdown {
-        position: relative;
-        display: grid;
-        justify-content: space-around;
-        align-items: center;
-        width: 80%;
-        margin: auto;
-    }
-
-    .bar {
-        display: block;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: var(--bar-height);
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-        transition: background 0.15s;
-    }
-
-
+    color: white;
+  }
     /* Footer */
     .footer-body {
         margin: 0 0 73px 0;
@@ -301,4 +215,3 @@ h3 {
     .footer-link {
         color: whitesmoke;
     }
-}
