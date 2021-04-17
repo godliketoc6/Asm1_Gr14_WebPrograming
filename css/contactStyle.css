@@ -75,7 +75,7 @@ h2 {
     font-size:0.8rem;
 }
 
-label, #mainReg h3, #mainReg h2, #mainReg p{
+main label, #mainReg h3, #mainReg h2, #mainReg p{
     width: 100%;
     margin: 10px auto;
     text-align:left;
