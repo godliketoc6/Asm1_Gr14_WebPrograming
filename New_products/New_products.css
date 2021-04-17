@@ -1,7 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;1,400&display=swap');
+@font-face {
+  font-family: title;
+  src: url(../fonts/ProzaLibre-Regular.ttf);
+}
 
 body{
   background-color: white;
+}
+
+img {
+  width: 80%;
+}
+
+#picE {
+  width: 90%;
 }
 
 .container{
@@ -12,7 +23,7 @@ body{
   align-items: stretch;
   align-content: space-around;
   padding: 10px;
-  font-family: 'Proza Libre', sans-serif;
+  font-family: title, Times, serif;
 }
 
 .card{
@@ -45,7 +56,7 @@ body{
   border: none;
   outline: 0;
   box-shadow: 2px 4px 2px 3px rgba(0, 0, 0, 0.2);
-  font-family: 'Proza Libre', sans-serif;
+  font-family: title, Times, serif;
 }
 
 a{
