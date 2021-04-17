@@ -304,3 +304,9 @@ td{
 .col-product-3 img{
     width: 300px;
 }
+
+.thankyou{
+    margin: 5%;
+    text-align: center;
+    min-height: 1080px;
+}
