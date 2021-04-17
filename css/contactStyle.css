@@ -377,6 +377,12 @@ textarea {
         margin-right: 0;
     }
 
+    .radioLabel
+    ,.checkboxLabel{
+        font-size: 0.8rem;
+        padding: 0px;
+
+    }
     #typeCont .radioType {
         width: 100px;
         height: 140px;
