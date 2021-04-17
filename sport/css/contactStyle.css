@@ -339,6 +339,9 @@ textarea {
         width: 90vw;
         margin: 10vh 5vw;
     }
+    .radioLabel, .checkboxLabel  {
+        font-size: 12px;
+    }
 }
 
 /*iPhone 6 Screen*/
@@ -395,5 +398,8 @@ textarea {
         padding: 3%;
         font-size: 0.5rem;
     } 
+    .radioLabel, .checkboxLabel  {
+        font-size: 9px;
+    }
 }
 
