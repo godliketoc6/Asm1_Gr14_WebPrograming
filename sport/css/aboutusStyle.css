@@ -382,10 +382,6 @@ h3 {
   .usdetail li {
     font-size: var(--font-micro);
   }
-
-  #ham {
-    color:whitesmoke;
-  }
 }
 
 
@@ -506,9 +502,5 @@ h3 {
 
   }
 
-  #ham {
-    color:whitesmoke;
-  }
-}
 
 
