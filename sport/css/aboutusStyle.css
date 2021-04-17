@@ -382,6 +382,10 @@ h3 {
   .usdetail li {
     font-size: var(--font-micro);
   }
+
+  #ham {
+    color:whitesmoke;
+  }
 }
 
 
@@ -501,4 +505,10 @@ h3 {
     padding: 5%;
 
   }
+
+  #ham {
+    color:whitesmoke;
+  }
 }
+
+
