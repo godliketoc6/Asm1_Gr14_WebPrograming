@@ -87,6 +87,12 @@ p{
   
 }
 
+iframe {
+  width: 50%;
+  height: 200px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width:780px) {
     .pricing-table{
       flex: 100%;
