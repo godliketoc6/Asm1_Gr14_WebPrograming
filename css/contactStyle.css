@@ -112,7 +112,6 @@ input[type=reset]{
 }
 
 .container-contact100 {
-  width: 100%;  
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -128,5 +127,8 @@ input[type=reset]{
   background: #fff;
   overflow: hidden;
   flex-wrap: wrap;
+}
 
+form {
+  padding: 3% 0;
 }
