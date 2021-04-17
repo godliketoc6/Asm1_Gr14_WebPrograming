@@ -8,27 +8,31 @@
     <title>Asport | PRODUCT</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
+    <link rel="stylesheet" href="css/headerandfooter.css" />
+    <script src="https://kit.fontawesome.com/13954ad90d.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
     <div class="header">
-        <!-----Navigation Bar----->
-        <div class="navbar">
-            <div id="logo">
-                <img src="img/logo.png" width="100px">
+        <!-- Header -->
+        <header>
+            <div class="bar-content">
+                <div class="bar-content center">
+                    <img  src="img/logo.png">
+                    <label class="bar__nav-toggle" for="inpNavToggle">
+                        <i class="fas fa-bars"></i>
+                        
+                    </label>
+                    <input type="checkbox" id="inpNavToggle" />
+                    <nav class="nav">
+                        <a class="link" href="index.html">Home</a>
+                        <a class="link" href="aboutus.html">About us</a>
+                        <a class="link" href="product.html">Product</a>
+                        <a class="link" href="contact.html">Contact</a>
+                    </nav>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li class="hightlight"><a href="">Product</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            <img src="img/cart.png" width="30px" height="30px">
-        </div>
-    </div>
-
+        </header>
     <div class="container-product">
         <div class="row rowProduct">
             <h1>All products</h1>
@@ -42,7 +46,9 @@
         </div>
         <div class="row">
             <div class="col-product-4">
+                <a href="1.html">
                 <img src="img/product/4.png">
+                </a>
                 <h3>The Speed</h3>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -299,4 +305,5 @@
 
         </div>
     </div>
+
 </body>
