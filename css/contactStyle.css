@@ -9,9 +9,11 @@
 
 .leftDiv
   {
-      height: 880px;
-      width: 49%;
-      float: left;
+    background-image: url('../img/placeholder.jpg' );
+    background-size: cover; 
+    height: 880px;
+    width: 49%;
+    float: left;
   }
 .rightDiv
   {
@@ -112,14 +114,12 @@ input[type=reset]{
 }
 
 .container-contact100 {
-  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
-  background: rgb(223, 223, 223);
-  
+  padding: 15px 0;
+  background: rgb(223, 223, 223);  
 }
 
 .wrap-contact100 {
@@ -129,6 +129,8 @@ input[type=reset]{
   flex-wrap: wrap;
 }
 
-form {
-  padding: 3% 0;
+textarea {
+  height: 30%;
+  width: 100%;
 }
+
