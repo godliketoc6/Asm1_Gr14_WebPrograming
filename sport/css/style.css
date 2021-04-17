@@ -282,8 +282,20 @@ td{
     padding: 10px 5px;
 }
 .buttons{
-    margin: 0px 2rem;
+    align-items: right;
+    margin-bottom: 5%;
+    margin-left: 65%;
 }
+@media only screen and (max-width:767px){
+    .button1{
+        margin-bottom: 50%;
+    }
+    .buttons{
+        align-items: right;
+        margin-bottom: 0%;
+        margin-left: 0%;
+    }
+
 
 .total-price{
     display: flex;
