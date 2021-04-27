@@ -10,7 +10,7 @@
 
 body {
     min-height: 100vh;
-    background-image: url('../img/purple-background.png');
+    background-image: url('../New_products/img/purple-background.png');
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
@@ -24,7 +24,7 @@ h1, h2, h3 {
 h1 {
   text-align: center;
   background-image: white;
-  font-size: 50px;s
+  font-size: 50px;
   color: black;
   padding: 60px;
 }
