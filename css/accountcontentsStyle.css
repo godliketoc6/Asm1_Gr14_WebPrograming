@@ -237,7 +237,7 @@ button:focus::before{
 #signUpCont{
     width: 40%;
     height: 100%;
-    background-image: url(../img/signinBanner.jpg);
+    background-image: url(../New_products/signinBanner.jpg);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-size: cover;
